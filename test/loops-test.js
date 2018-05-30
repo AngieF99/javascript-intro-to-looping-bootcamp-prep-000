@@ -26,8 +26,8 @@ describe('loops', () => {
     src: fs.readFileSync(path.resolve(__dirname, '..', 'loops.js'), 'utf-8')
   })
 
- array)', () => {
-    it('adds `"I am ${i} strange loop${i === 0 ?  describe('forLoop(\'\' : \'s\'}."` to an array 25 times', () => {
+  describe('forLoop(array)', () => {
+    it('adds `"I am ${i} strange loop${i === 0 ? \'\' : \'s\'}."` to an array 25 times', () => {
       const [array, t] = makeArray()
       const strangeArray = forLoop(array)
 
